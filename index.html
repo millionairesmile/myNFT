@@ -3,22 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My NFT Page</title>
+    <title>Let Me Introduce My NFT!!!</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="clock font-digi">00:00</div>
-        <div class="quotes">Work. Life. Balance.</div>
+        <div class="font-digi clock">00:00</div>
+        <div>
+          <button class="font-yd-sea quotes" onclick="onClickQuotes()">
+            Work. Life. Balance.
+          </button>
+          <div class="new-quote">
+            <input class="new-quote-input" type="text" />
+            <button onclick="onClickNewQuote()">등 록</button>
+          </div>
+        </div>
       </header>
-      <main>Hello, World!</main>
+      <main>
+        <div class="nft"></div>
+        <img class="nft-img" loading="lazy" />
+        <h1 class="nft-name"></h1>
+        <h3 class="nft-desc"></h3>
+      </main>
     </div>
     <video
       src="./assets:images/pexels-deconjon-aran-17356135 (1440p).mp4"
       autoplay
       muted
+      loop
     ></video>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
